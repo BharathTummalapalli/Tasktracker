@@ -1,0 +1,31 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+.task-card {
+    transition: all 0.3s ease;
+}
+.task-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.task-input {
+    transition: border-color 0.2s ease;
+}
+.task-input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+.filter-btn {
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.filter-btn.active {
+    background-color: #2563eb;
+    color: white;
+}
+.task-list {
+    animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
